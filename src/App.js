@@ -35,7 +35,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home loader={loader}/>} />
         <Route exact path="/cart" element={<Cart/>} />
-        {cart.products.length>0 && <Route exact path="/checkout" element={<Checkout/>} />}
+        <Route exact path="/checkout" element={<Checkout/>} />
         <Route exact path="/products" element={<Products/>} />
         <Route exact path="/signup" element={<Signup/>} />
         <Route exact path="/login" element={<Login/>} />
