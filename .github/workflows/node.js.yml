@@ -25,5 +25,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm i -f
+    - run : npm install -g serve
     - run: npm run build --if-present
     - run: sudo cp -r /home/ubuntu/BookWorld/_work/BookWorld/BookWorld/build/* /var/www/BookWorld/build
